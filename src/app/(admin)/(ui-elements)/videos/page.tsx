@@ -4,15 +4,15 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Next.js Videos | TailAdmin - Next.js Dashboard Template",
+  title: "Vídeos Next.js | TailAdmin - Template de Painel Administrativo Next.js",
   description:
-    "This is Next.js Videos page for TailAdmin - Next.js Tailwind CSS Admin Dashboard Template",
+    "Esta é a página de Vídeos Next.js para TailAdmin - Template de Painel Administrativo Next.js com Tailwind CSS",
 };
 
 export default function VideoPage() {
   return (
     <div>
-      <PageBreadcrumb pageTitle="Videos" />
+      <PageBreadcrumb pageTitle="Vídeos" />
 
       <VideosExample />
     </div>

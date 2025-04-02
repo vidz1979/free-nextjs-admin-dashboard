@@ -9,33 +9,33 @@ import { ChevronDownIcon } from "@/components/icons";
 export default function SelectInputs() {
   const options = [
     { value: "marketing", label: "Marketing" },
-    { value: "template", label: "Template" },
-    { value: "development", label: "Development" },
+    { value: "template", label: "Modelo" },
+    { value: "development", label: "Desenvolvimento" },
   ];
 
   const [selectedValues, setSelectedValues] = useState<string[]>([]);
 
   const handleSelectChange = (value: string) => {
-    console.log("Selected value:", value);
+    console.log("Valor selecionado:", value);
   };
 
   const multiOptions = [
-    { value: "1", text: "Option 1", selected: false },
-    { value: "2", text: "Option 2", selected: false },
-    { value: "3", text: "Option 3", selected: false },
-    { value: "4", text: "Option 4", selected: false },
-    { value: "5", text: "Option 5", selected: false },
+    { value: "1", text: "Opção 1", selected: false },
+    { value: "2", text: "Opção 2", selected: false },
+    { value: "3", text: "Opção 3", selected: false },
+    { value: "4", text: "Opção 4", selected: false },
+    { value: "5", text: "Opção 5", selected: false },
   ];
 
   return (
-    <ComponentCard title="Select Inputs">
+    <ComponentCard title="Entradas de Seleção">
       <div className="space-y-6">
         <div>
-          <Label>Select Input</Label>
+          <Label>Seleção</Label>
           <div className="relative">
             <Select
               options={options}
-              placeholder="Select Option"
+              placeholder="Selecione uma Opção"
               onChange={handleSelectChange}
               className="dark:bg-dark-900"
             />
@@ -46,13 +46,13 @@ export default function SelectInputs() {
         </div>
         <div className="relative">
           <MultiSelect
-            label="Multiple Select Options"
+            label="Seleção Múltipla"
             options={multiOptions}
             defaultSelected={["1", "3"]}
             onChange={(values) => setSelectedValues(values)}
           />
           <p className="sr-only">
-            Selected Values: {selectedValues.join(", ")}
+            Valores Selecionados: {selectedValues.join(", ")}
           </p>
         </div>
       </div>

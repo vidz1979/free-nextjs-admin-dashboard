@@ -23,45 +23,45 @@ export default function InputStates() {
   };
   return (
     <ComponentCard
-      title="Input States"
-      desc="Validation styles for error, success and disabled states on form controls."
+      title="Estados de Entrada"
+      desc="Estilos de validação para estados de erro, sucesso e desabilitado em controles de formulário."
     >
       <div className="space-y-5 sm:space-y-6">
         {/* Error Input */}
         <div>
-          <Label>Email</Label>
+          <Label>E-mail</Label>
           <Input
             type="email"
             defaultValue={email}
             error={error}
             onChange={handleEmailChange}
-            placeholder="Enter your email"
-            hint={error ? "This is an invalid email address." : ""}
+            placeholder="Digite seu e-mail"
+            hint={error ? "Este é um endereço de e-mail inválido." : ""}
           />
         </div>
 
         {/* Success Input */}
         <div>
-          <Label>Email</Label>
+          <Label>E-mail</Label>
           <Input
             type="email"
             defaultValue={email}
             success={!error}
             onChange={handleEmailChange}
-            placeholder="Enter your email"
-            hint={!error ? "Valid email!" : ""}
+            placeholder="Digite seu e-mail"
+            hint={!error ? "E-mail válido!" : ""}
           />
         </div>
 
         {/* Disabled Input */}
         <div>
-          <Label>Email</Label>
+          <Label>E-mail</Label>
           <Input
             type="text"
             defaultValue="disabled@example.com"
             disabled={true}
-            placeholder="Disabled email"
-            hint="This field is disabled."
+            placeholder="E-mail desabilitado"
+            hint="Este campo está desabilitado."
           />
         </div>
       </div>
