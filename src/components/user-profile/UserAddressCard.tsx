@@ -85,36 +85,65 @@ export default function UserAddressCard() {
         </div>
       </div>
       <Modal isOpen={isOpen} onClose={closeModal} className="max-w-[700px] m-4">
-        <div className="relative w-full p-4 overflow-y-auto bg-white no-scrollbar rounded-3xl dark:bg-gray-900 lg:p-11">
+        <div className="no-scrollbar relative w-full max-w-[700px] overflow-y-auto rounded-3xl bg-white p-4 dark:bg-gray-900 lg:p-11">
           <div className="px-2 pr-14">
             <h4 className="mb-2 text-2xl font-semibold text-gray-800 dark:text-white/90">
-              Editar Endereço
+              Editar Endereço de Entrega
             </h4>
             <p className="mb-6 text-sm text-gray-500 dark:text-gray-400 lg:mb-7">
-              Atualize seus detalhes para manter seu perfil atualizado.
+              Atualize seu endereço de entrega para receber seus pedidos.
             </p>
           </div>
           <form className="flex flex-col">
-            <div className="px-2 overflow-y-auto custom-scrollbar">
-              <div className="grid grid-cols-1 gap-x-6 gap-y-5 lg:grid-cols-2">
-                <div>
-                  <Label>País</Label>
-                  <Input type="text" defaultValue="Estados Unidos" />
-                </div>
+            <div className="custom-scrollbar h-[450px] overflow-y-auto px-2 pb-3">
+              <div>
+                <h5 className="mb-5 text-lg font-medium text-gray-800 dark:text-white/90 lg:mb-6">
+                  Informações de Endereço
+                </h5>
 
-                <div>
-                  <Label>Cidade/Estado</Label>
-                  <Input type="text" defaultValue="Arizona, Estados Unidos." />
-                </div>
+                <div className="grid grid-cols-1 gap-x-6 gap-y-5 lg:grid-cols-2">
+                  <div className="col-span-2 lg:col-span-1">
+                    <Label>Nome Completo</Label>
+                    <Input type="text" defaultValue="Musharof Chowdhury" />
+                  </div>
 
-                <div>
-                  <Label>Código Postal</Label>
-                  <Input type="text" defaultValue="ERT 2489" />
-                </div>
+                  <div className="col-span-2 lg:col-span-1">
+                    <Label>Telefone</Label>
+                    <Input type="text" defaultValue="+09 363 398 46" />
+                  </div>
 
-                <div>
-                  <Label>ID Fiscal</Label>
-                  <Input type="text" defaultValue="AS4568384" />
+                  <div className="col-span-2">
+                    <Label>Endereço</Label>
+                    <Input
+                      type="text"
+                      defaultValue="1234 Rua Principal, Cidade, Estado, CEP"
+                    />
+                  </div>
+
+                  <div className="col-span-2 lg:col-span-1">
+                    <Label>Cidade</Label>
+                    <Input type="text" defaultValue="Phoenix" />
+                  </div>
+
+                  <div className="col-span-2 lg:col-span-1">
+                    <Label>Estado</Label>
+                    <Input type="text" defaultValue="Arizona" />
+                  </div>
+
+                  <div className="col-span-2 lg:col-span-1">
+                    <Label>CEP</Label>
+                    <Input type="text" defaultValue="85001" />
+                  </div>
+
+                  <div className="col-span-2 lg:col-span-1">
+                    <Label>País</Label>
+                    <Input type="text" defaultValue="Estados Unidos" />
+                  </div>
+
+                  <div className="col-span-2">
+                    <Label>Tipo de Endereço</Label>
+                    <Input type="text" defaultValue="Casa" />
+                  </div>
                 </div>
               </div>
             </div>
