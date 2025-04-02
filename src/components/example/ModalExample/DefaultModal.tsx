@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
-import ComponentCard from "../../common/ComponentCard";
+import ComponentCard from "@/components/common/ComponentCard";
 
-import { Modal } from "../../ui/modal";
-import Button from "../../ui/button/Button";
+import { Modal } from "@/components/ui/modal";
+import Button from "@/components/ui/button/Button";
 import { useModal } from "@/hooks/useModal";
 
 export default function DefaultModal() {
@@ -17,7 +17,7 @@ export default function DefaultModal() {
     <div>
       <ComponentCard title="Default Modal">
         <Button size="sm" onClick={openModal}>
-          Open Modal
+          Abrir Modal
         </Button>
         <Modal
           isOpen={isOpen}
@@ -25,7 +25,7 @@ export default function DefaultModal() {
           className="max-w-[600px] p-5 lg:p-10"
         >
           <h4 className="font-semibold text-gray-800 mb-7 text-title-sm dark:text-white/90">
-            Modal Heading
+            Título do Modal
           </h4>
           <p className="text-sm leading-6 text-gray-500 dark:text-gray-400">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -40,10 +40,10 @@ export default function DefaultModal() {
           </p>
           <div className="flex items-center justify-end w-full gap-3 mt-8">
             <Button size="sm" variant="outline" onClick={closeModal}>
-              Close
+              Fechar
             </Button>
             <Button size="sm" onClick={handleSave}>
-              Save Changes
+              Salvar Alterações
             </Button>
           </div>
         </Modal>

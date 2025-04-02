@@ -5,78 +5,78 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Next.js Alerts | TailAdmin - Next.js Dashboard Template",
+  title: "Next.js Alertas | TailAdmin - Next.js Dashboard Template",
   description:
-    "This is Next.js Alerts page for TailAdmin - Next.js Tailwind CSS Admin Dashboard Template",
+    "Esta é a página de Alertas Next.js para TailAdmin - Next.js Tailwind CSS Admin Dashboard Template",
   // other metadata
 };
 
 export default function Alerts() {
   return (
     <div>
-      <PageBreadcrumb pageTitle="Alerts" />
+      <PageBreadcrumb pageTitle="Alertas" />
       <div className="space-y-5 sm:space-y-6">
-        <ComponentCard title="Success Alert">
+        <ComponentCard title="Alerta de Sucesso">
           <Alert
             variant="success"
-            title="Success Message"
-            message="Be cautious when performing this action."
+            title="Mensagem de Sucesso"
+            message="Seja cauteloso ao realizar esta ação."
             showLink={true}
             linkHref="/"
-            linkText="Learn more"
+            linkText="Saiba mais"
           />
           <Alert
             variant="success"
-            title="Success Message"
-            message="Be cautious when performing this action."
+            title="Mensagem de Sucesso"
+            message="Seja cauteloso ao realizar esta ação."
             showLink={false}
           />
         </ComponentCard>
-        <ComponentCard title="Warning Alert">
+        <ComponentCard title="Alerta de Aviso">
           <Alert
             variant="warning"
-            title="Warning Message"
-            message="Be cautious when performing this action."
+            title="Mensagem de Aviso"
+            message="Seja cauteloso ao realizar esta ação."
             showLink={true}
             linkHref="/"
-            linkText="Learn more"
+            linkText="Saiba mais"
           />
           <Alert
             variant="warning"
-            title="Warning Message"
-            message="Be cautious when performing this action."
+            title="Mensagem de Aviso"
+            message="Seja cauteloso ao realizar esta ação."
             showLink={false}
           />
         </ComponentCard>{" "}
-        <ComponentCard title="Error Alert">
+        <ComponentCard title="Alerta de Erro">
           <Alert
             variant="error"
-            title="Error Message"
-            message="Be cautious when performing this action."
+            title="Mensagem de Erro"
+            message="Seja cauteloso ao realizar esta ação."
             showLink={true}
             linkHref="/"
-            linkText="Learn more"
+            linkText="Saiba mais"
           />
           <Alert
             variant="error"
-            title="Error Message"
-            message="Be cautious when performing this action."
+            title="Mensagem de Erro"
+            message="Seja cauteloso ao realizar esta ação."
             showLink={false}
           />
         </ComponentCard>{" "}
-        <ComponentCard title="Info Alert">
+        <ComponentCard title="Alerta de Informação">
           <Alert
             variant="info"
-            title="Info Message"
-            message="Be cautious when performing this action."
+            title="Mensagem de Informação"
+            message="Seja cauteloso ao realizar esta ação."
             showLink={true}
             linkHref="/"
-            linkText="Learn more"
+            linkText="Saiba mais"
           />
           <Alert
             variant="info"
-            title="Info Message"
-            message="Be cautious when performing this action."
+            title="Mensagem de Informação"
+            message="Seja cauteloso ao realizar esta ação."
             showLink={false}
           />
         </ComponentCard>

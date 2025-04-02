@@ -1,9 +1,9 @@
 "use client";
 import { useModal } from "@/hooks/useModal";
-import ComponentCard from "../../common/ComponentCard";
+import ComponentCard from "@/components/common/ComponentCard";
 
-import Button from "../../ui/button/Button";
-import { Modal } from "../../ui/modal";
+import Button from "@/components/ui/button/Button";
+import { Modal } from "@/components/ui/modal";
 
 export default function FullScreenModal() {
   const {
@@ -19,7 +19,7 @@ export default function FullScreenModal() {
   return (
     <ComponentCard title="Full Screen Modal">
       <Button size="sm" onClick={openFullscreenModal}>
-        Open Modal
+        Abrir Modal
       </Button>
       <Modal
         isOpen={isFullscreenModalOpen}
@@ -30,7 +30,7 @@ export default function FullScreenModal() {
         <div className="fixed top-0 left-0 flex flex-col justify-between w-full h-screen p-6 overflow-x-hidden overflow-y-auto bg-white dark:bg-gray-900 lg:p-10">
           <div>
             <h4 className="font-semibold text-gray-800 mb-7 text-title-sm dark:text-white/90">
-              Modal Heading
+              Título do Modal
             </h4>
             <p className="text-sm leading-6 text-gray-500 dark:text-gray-400">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -53,10 +53,10 @@ export default function FullScreenModal() {
           </div>
           <div className="flex items-center justify-end w-full gap-3 mt-8">
             <Button size="sm" variant="outline" onClick={closeFullscreenModal}>
-              Close
+              Fechar
             </Button>
             <Button size="sm" onClick={handleSave}>
-              Save Changes
+              Salvar Alterações
             </Button>
           </div>
         </div>

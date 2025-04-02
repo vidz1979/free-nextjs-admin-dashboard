@@ -1,0 +1,12 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Regras gerais
+
+- Gerenciador de pacotes node: bun
+- Quando precisar instalar pacotes, evite modificar o [package.json](mdc:package.json) - ao invés disso, execute um `bun add <pacote>`
+- Quando precisar gerar uma nova migração (Drizzle), utilize o comando `bun db:generate`. 
+- Para implantar a migração (Drizzle) no banco, execute `bun --env-file=.env.development db:push`
+- Sempre, em toda alteração, incremente a versão em [package.json](mdc:package.json)
